@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.special-question {
+    font-size: inherit; /* Mantiene la dimensione del testo circostante */
+    animation: blink 1s infinite; /* Attiva l'animazione */
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1; /* Completamente visibile */
+    }
+    50% {
+      opacity: 0; /* Completamente invisibile */
+    }
+  }
